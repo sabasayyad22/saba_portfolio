@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saba Sayyad | Web and App Developer</title>
+    <meta name="description" content="Portfolio of Saba Sayyad, a web and app developer and Computer Engineering student, with an internship at Marelli Motherson Automotive.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="#top">Saba Sayyad</a>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="top">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm Saba, a web and app developer.</h1>
+                <p class="lead">
+                    I'm a third-year B.Tech Computer Engineering student at PCCoE, Pune.
+                    I'm currently interning at Marelli Motherson Automotive.
+                </p>
+                <p class="hero-links">
+                    <a class="btn" href="#projects">See my projects</a>
+                    <a class="text-link" href="#contact">Get in touch</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Internship -->
+        <section id="internship" class="block">
+            <h2>Internship</h2>
+            <div class="block-body">
+                <article class="role">
+                    <header>
+                        <h3>Marelli Motherson Automotive</h3>
+                        <p class="role-meta">Intern, current</p>
+                    </header>
+                    <p>
+                        My internship covers computer vision and AI-assisted design for
+                        automotive lamp housings.
+                    </p>
+                    <ul class="work-list">
+                        <li>
+                            <h4>AI vision inspection</h4>
+                            <p>
+                                Detection and inspection of parts with computer vision. I also built a
+                                presentation on moving lamp cosmetic inspection from manual,
+                                operator-led checks to a robotic arm with AI vision.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Live CCTV checking</h4>
+                            <p>
+                                Computer vision that watches live CCTV camera feeds and checks them
+                                automatically, so people don't have to monitor every screen.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Automated process planning in CATIA V5</h4>
+                            <p>
+                                A planning and simulation system for plasma treatment and gluing along
+                                glue channels on lamp housings. It detects the channels, plans the path
+                                and tool orientation, selects the nozzle, checks for collisions and runs
+                                the result as a simulation in CATIA.
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="block">
+            <h2>Projects</h2>
+            <div class="block-body">
+
+                <article class="project">
+                    <h3>E-BOM Costing System</h3>
+                    <p class="project-sub">A web app that tracks the monthly cost of a PCBA and explains why it moved.</p>
+                    <p>
+                        Each PCBA has a bill of materials with its own revision workflow
+                        (draft, submit, approve or reject). Monthly cost comes from quantity, component
+                        price and exchange rate, and the app breaks every month-over-month change into
+                        price, FX, quantity and BOM effects. It has role-based access for admins,
+                        analysts and viewers, an audit trail, and flags exceptions. A cost estimator
+                        reads the standard BOM Excel format and works out the landed INR cost.
+                    </p>
+                    <p class="stack">FastAPI, React, PostgreSQL, Docker</p>
+                </article>
+
+                <article class="project">
+                    <h3>Paw Prints</h3>
+                    <p class="project-sub">A predictive disease monitoring system for dogs.</p>
+                    <p>
+                        Uses data analytics to predict diseases in dogs, so problems can be
+                        spotted early.
+                    </p>
+                </article>
+
+                <div class="earlier">
+                    <h3>Simple projects</h3>
+                    <ul>
+                        <li><strong>Shopping platform:</strong> a web app for browsing and buying products.</li>
+                        <li><strong>Weather app:</strong> shows the current weather for a city.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="block">
+            <h2>Skills</h2>
+            <div class="block-body">
+                <dl class="skills">
+                    <div>
+                        <dt>Web</dt>
+                        <dd>HTML, CSS, JavaScript, React</dd>
+                    </div>
+                    <div>
+                        <dt>Backend and data</dt>
+                        <dd>FastAPI, SQL, PostgreSQL, MongoDB, Docker</dd>
+                    </div>
+                    <div>
+                        <dt>Vision and AI</dt>
+                        <dd>YOLOv8, MobileNetV3, OCR, text-to-speech</dd>
+                    </div>
+                    <div>
+                        <dt>CAD and 3D</dt>
+                        <dd>CATIA V5, React Three Fiber</dd>
+                    </div>
+                    <div>
+                        <dt>Blockchain</dt>
+                        <dd>Solidity, Hardhat, ethers.js</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="block">
+            <h2>Contact</h2>
+            <div class="block-body">
+                <p class="contact-lead">I'm open to internships and projects in computer vision, automation and full-stack development.</p>
+                <p><a class="email" href="mailto:sabasayyad@email.com">sabasayyad@email.com</a></p>
+                <!-- Add your own links below, then remove this comment:
+                <p class="contact-links"><a href="https://github.com/your-username">GitHub</a> <a href="https://www.linkedin.com/in/your-username">LinkedIn</a></p>
+                -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Saba Sayyad</p>
+    </footer>
+</body>
+</html>
